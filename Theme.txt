@@ -1,0 +1,6 @@
+Name: Orchard Community Theme
+Author: Lombiq
+Website: https://lombiq.com
+Description: Theme for Orchard community websites like http://english.orchardproject.hu/.
+Version: 1.0
+BaseTheme: Piedone.PrettyGoodBaseTheme

@@ -1,0 +1,24 @@
+﻿@{ 
+    Orchard.ContentManagement.ContentItem contentItem = Model.ContentPart.ContentItem;
+    var bodyHtml = Model.Html.ToString();
+    if (!string.IsNullOrEmpty(bodyHtml))
+    {
+        var more = bodyHtml.IndexOf("<!--more-->");
+        if (more != -1)
+        {
+            bodyHtml = bodyHtml.Substring(0, more);
+        }
+        else
+        {
+            var firstP = bodyHtml.IndexOf("<p>");
+            var firstSlashP = bodyHtml.IndexOf("</p>");
+            if (firstP >= 0 && firstSlashP > firstP)
+            {
+                bodyHtml = bodyHtml.Substring(firstP, firstSlashP + 4 - firstP);
+            }
+        }
+    }
+    var body = new HtmlString(bodyHtml); 
+}
+@body
+<p>@Html.ItemDisplayLink(T("< More >").ToString(), contentItem)</p>

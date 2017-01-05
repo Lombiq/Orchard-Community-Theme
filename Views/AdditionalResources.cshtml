@@ -1,0 +1,28 @@
+﻿@{
+    /// <summary>
+    /// Specify additional resource inclusions here
+    /// 
+    /// See Resources.cshtml for examples.
+    /// </summary>
+}
+
+@{
+    Script.Include("navigation-fix.js").AtFoot();
+
+    Style.Include("~/Themes/OrchardHUN.Theme.English/Scripts/google-code-prettify/prettify.css");
+    Script.Include("google-code-prettify/prettify.js").AtFoot();
+
+    @Display.CustomResources();
+    
+    using (Script.Foot())
+    {
+    <script type="text/javascript">
+        (function ($) {
+            $(function () {
+                $("pre code").parent().addClass("prettyprint");
+                prettyPrint();
+            });
+        })(jQuery);
+    </script>
+    }
+}

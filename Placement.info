@@ -1,0 +1,17 @@
+﻿<Placement>
+  <!--Blog-->
+  <Match ContentType="Blog">
+    <Place Parts_Common_Metadata="-"/>
+  </Match>
+
+  <!--Page-->
+  <Match ContentType="Page">
+    <Place Parts_Common_Metadata="-"
+           Parts_Common_Metadata_Summary="-"/>
+  </Match>
+
+  <!-- Tweet button -->
+  <Match DisplayType="Detail">
+    <Place Parts_ContentWidgetsPart_Widget_30726="Content:5.1"/>
+  </Match>
+</Placement>

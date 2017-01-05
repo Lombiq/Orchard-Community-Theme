@@ -1,0 +1,28 @@
+# Orchard resource strings - hu-HU
+# Copyright (c) 2010 Outercurve Foundation
+# All rights reserved
+# This file is distributed under the BSD license
+
+#: ~/Themes/OrchardHUN.Theme.English/Views/BadgeOfHonor.cshtml
+#| msgid "PoweredBy"
+msgctxt "~/Themes/OrchardHUN.Theme.English/Views/BadgeOfHonor.cshtml"
+msgid "Powered by <a href=\"{0}\">Orchard</a>, fueled by <a href=\"{1}\">Lombiq</a>"
+msgstr "Támogatja az <a href=\"{0}\">Orchard</a>, működteti a <a href=\"{1}\">Lombiq</a>"
+
+#: ~/Themes/OrchardHUN.Theme.English/Views/BadgeOfHonor.cshtml
+#| msgid "LombiqLtd"
+msgctxt "~/Themes/OrchardHUN.Theme.English/Views/BadgeOfHonor.cshtml"
+msgid "&#169; Lombiq Technologies Ltd."
+msgstr "&#169; Lombiq Technologies Kft."
+
+#: ~/Themes/OrchardHUN.Theme.English/Views/Parts.Common.Body.Summary.cshtml
+#| msgid "More"
+msgctxt "~/Themes/OrchardHUN.Theme.English/Views/Parts.Common.Body.Summary.cshtml"
+msgid "< More >"
+msgstr "< Tovább >"
+
+#: ~/Themes/OrchardHUN.Theme.English/Views/Parts.Search.SearchForm.cshtml
+#| msgid "Search"
+msgctxt "~/Themes/OrchardHUN.Theme.English/Views/Parts.Search.SearchForm.cshtml"
+msgid "Search..."
+msgstr "Keresés..."

@@ -1,0 +1,18 @@
+﻿@{
+    /// <summary>
+    /// Specify ad-hoc shape insertions here
+    /// 
+    /// </summary>
+}
+
+@{
+    /* Inserting some ad hoc shapes
+    ***************************************************************/
+    WorkContext.Layout.Head.Add(New.Analytics(), "5");
+    WorkContext.Layout.Header.Add(New.HiddenBranding(), "5"); // Site name and link to the home page
+    WorkContext.Layout.Footer.Add(New.FootMenu(), "1"); // Login and dashboard links
+    WorkContext.Layout.Footer.Add(New.User(), "2"); // Login and dashboard links
+    WorkContext.Layout.Footer.Add(New.BadgeOfHonor(), "3"); // Powered by Orchard
+
+    @Display.AdditionalInsertions();
+}

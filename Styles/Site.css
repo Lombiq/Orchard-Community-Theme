@@ -1,0 +1,424 @@
+﻿/* General
+***************************************************************/
+
+body
+{
+    background: #F6FAEB url("../Images/Backgrounds/HeaderRepeat.jpg") repeat-x center top;
+    font-size: 100%;
+    font: normal 100% Frutiger,Frutiger Linotype,Univers,Calibri,Gill Sans,Gill Sans MT,Myriad Pro, Myriad,DejaVu Sans Condensed,Liberation Sans,Nimbus Sans L, Geneva,Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+
+
+/* Headings */
+h1, h2, h3, h4, h5, h6, legend
+{
+    color: #27320A;
+    font-family: Palatino Linotype,Palatino,Palladio,URW Palladio L,Book Antiqua,Baskerville,Bookman Old Style,Bitstream Charter,Nimbus Roman No9 L,Garamond,Apple Garamond,ITC Garamond Narrow,New Century Schoolbook,Century Schoolbook,Century Schoolbook L,Georgia,serif;
+    font-style: normal;
+    font-weight: normal;
+    padding: 4px 0;
+}
+
+h1
+{
+    font-size: 200%;
+}
+
+.zone-content h1:first-child
+{
+    margin-top: 0;
+}
+
+h2
+{
+    font-size: 170%;
+}
+
+h3
+{
+    font-size: 150%;
+}
+
+h4
+{
+    font-size: 130%;
+}
+
+h5
+{
+    font-size: 120%;
+}
+
+h6
+{
+    font-size: 110%;
+}
+
+
+/* Text elements */
+p
+{
+    line-height: 22px;
+    padding: 2px 8px 2px 0px;
+}
+
+a, a:visited
+{
+    color: #006699;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+a:active
+{
+    color: #006699;
+}
+
+.content-items a
+{
+    color: #069;
+    font-size: inherit;
+}
+
+.prettyprint
+{
+    overflow-x: auto;
+}
+
+
+/* Lists */
+ul, ol
+{
+    margin: 0 0 0 1.5em;
+}
+
+    /* Markdown editor toolbar list design override */
+#wmd-button-row
+{
+    list-style-type: none;
+}
+
+.content-item.taxonomy ul
+{
+    list-style: none;
+}
+
+
+
+/* Widgets
+***************************************************************/
+
+.widget h1
+{
+	font-size: 1.2em;
+}
+
+/* Content Mode */
+.content-control
+{
+    border: none;
+    overflow: visible; /* Inherits auto, what causes a long discussion list to have a scrollbar */
+}
+
+.widget-control
+{
+    border: none;
+}
+
+#layout-navigation .widget-control:after
+{
+    clear: none; /* Otherwise if logged in, the search box overlaps the whole menu */
+}
+
+.widget-aside-second.widget-projection-widget.widget li div:first-child
+{
+    display: inline-block;
+}
+
+
+
+/* Structure
+***************************************************************/
+
+#layout-wrapper
+{
+    background: #f6faea url(../Images/Backgrounds/Page.jpg) no-repeat center top;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+#layout-main-container
+{
+    min-height: 550px; /* Sticky footer */
+}
+    
+    #layout-main
+    {
+        background: #fff url(../Images/Backgrounds/Content.jpg) no-repeat center top;
+    }
+
+
+/* Header */
+#branding
+{
+    width: 100%;
+    height: 90px;
+}
+
+#branding a
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Navigation */
+#layout-navigation
+{
+    height: 44px;
+    width: 970px;
+}
+
+    #layout-navigation ul li
+    {
+        float: left;
+        margin: 0 8px;
+        border: 0;
+        background: transparent;
+    }
+
+    #layout-navigation ul li a, #layout-navigation ul li a:visited, #layout-navigation ul li a:active
+    {
+        color: #E2E4DD;
+        display: block;
+        font-size: 104%;
+        padding: 12px;
+        text-decoration: none;
+        line-height: 21px;
+    }
+    
+    #layout-navigation ul li a:hover
+    {
+        color: #ffea9b;
+    }
+
+    #layout-navigation ul li.current
+    {
+        background: url("../Images/Backgrounds/MenuTabCurrent.gif") no-repeat scroll center bottom transparent;
+    }
+        
+    #layout-navigation .dropdown ul
+    {
+        width: 210px;
+        margin-top: 44px;
+        background-color: #27320A;
+        background-image: none;
+        opacity: 0.90;
+        border: 0;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+        
+        #layout-navigation .dropdown ul li
+        {
+            width: 210px;
+        }  
+
+
+/* Footer */
+#footer
+{
+    height: 100px;
+    background: url("../Images/Backgrounds/Footer.jpg") no-repeat scroll center top transparent;
+    text-align: center;
+    padding-top: 20px;
+}
+    
+#foot-menu ul
+{
+    list-style: none outside none;
+    padding: 0;
+    margin: 0 0 0 0;
+    text-align: center;
+}
+    
+    #foot-menu ul li
+    {
+        display: inline;
+        margin: 0;
+        padding: 0 8px;
+    }
+  
+    
+ /* Zones */
+.zone-header
+{
+    padding: 0;
+}
+
+.zone-content
+{
+    padding-top: 0;
+}
+    
+ 
+ 
+ /* Main
+***************************************************************/  
+.content-items .content-item header h1 a
+ {
+    color: #069;
+ }
+ 
+ .tags a
+ {
+    color: #069;    
+ }
+ 
+ 
+ 
+ /* Forms
+***************************************************************/
+button, .button, .button:link, .button:visited
+{
+    font-family: Segoe UI,Trebuchet,Arial,Sans-Serif;
+    background: #F5F5F5;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F5F5F5), to(#cbcbcb));
+    background: -moz-linear-gradient(top , #F5F5F5, #cbcbcb);
+    border: 1px solid #999999;
+    margin-left: 0.2em;
+    color: #2D2F25;
+    cursor: pointer;
+    padding: 0.2em 0.8em 0.2em 0.8em;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+    box-shadow: 0 4px 4px rgba(231,231,231,.2) inset;
+    -webkit-box-shadow: 0 4px 4px rgba(231,231,231,.2) inset;
+    -moz-box-shadow: 0 4px 4px rgba(231,231,231,.2) inset;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+.primaryAction, .primaryAction:link, .primaryAction:visited
+{
+    border-color: #bb8b2d;
+    color: #fff;
+    text-decoration: none;
+    background: #ffac40;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffac40), to(#f06015));
+    background: -moz-linear-gradient(top,  #ffac40,  #f9760d);
+}
+
+button:hover, .button:hover, button:active, .button:active, button:focus, .button:focus, button:disabled, .button:disabled
+{
+    border: 1px solid #405f71;
+    color: #fff;
+    text-decoration: none;
+    background: #4687ad;
+    background: -webkit-gradient(linear, left top, left bottom, from(#4687AD), to(#366581));
+    background: -moz-linear-gradient(top , #4687AD, #366581);
+}
+
+.edit-item
+{
+    width: 100%;
+}
+
+.edit-item fieldset
+{
+    width: 80%;
+}
+
+.edit-item input, .edit-item textarea
+{
+    width: 100%;
+    -moz-box-sizing: border-box; /* Without these textareas would be smaller than other inputs */
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+/* Modules
+***************************************************************/
+
+/* Search widget */
+.search-form input[type="text"]
+{
+    width: 100px;
+    float: left;
+    color: #27320A;
+    background-color: #E2E4DD;
+}
+
+.search-form button[type="submit"]
+{
+    width: 30px;
+    padding-left: 5px;
+    float: left;
+    margin: 3px 0 0 5px;
+    color: #27320A;
+    background-color: #E2E4DD;
+}
+
+/* Facebook Like and LinkedIn Share button */
+.widget-linked-in-button, .widget-facebook-like-button-widget
+{
+    display: inline-block;
+}
+
+
+/* Misc
+***************************************************************/
+
+.user-display
+{
+    float: none;
+    padding: 0;
+}
+    
+.credits
+{
+    float: none;
+}
+    
+.mission-statement
+{
+	background-image: url('../Images/Backgrounds/AboutOrchard.jpg');
+	background-repeat: no-repeat;
+	width: 532px;
+	height: 197px;
+	margin: 20px 0px 0px 30px;
+	color: #3E483C;
+}
+
+.mission-statement div
+{
+    float: right;
+    width: 60%;
+    margin-right: 20px;
+    font-size: 1.05em;
+}
+
+.mission-statement h5
+{
+    margin-top: 5px;
+}
+
+/* for blogposts */
+.left-image
+{
+    display: block;
+    float: left;
+    margin: 0 1em 1em 0;
+    max-width: 270px;
+}

@@ -1,0 +1,14 @@
+﻿@using Orchard.Search.ViewModels;
+
+@{
+    Style.Require("Search");
+    Script.Include("search-form-enhancement.js").AtFoot();
+}
+
+@using (Html.BeginForm("index", "search", new { area = "Orchard.Search" }, FormMethod.Get, new { @class = "search-form" }))
+{ 
+    <fieldset>
+        @Html.TextBox("q", ((SearchViewModel)(Model.ViewModel)).Query)
+        <button type="submit">@T("OK")</button>
+    </fieldset>
+}
