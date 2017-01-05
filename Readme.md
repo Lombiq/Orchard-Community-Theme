@@ -6,7 +6,7 @@
 
 An Orchard CMS theme for for Orchard community websites like [Orchard Project Hungary](http://english.orchardproject.hu/). Built on the original orchardproject.net theme with some improvements.
 
-The theme is also available for [DotNest](http://dotnest.com/) sites.
+The theme is also available for [DotNest](https://dotnest.com/) sites.
 
 
 ## Repositories
